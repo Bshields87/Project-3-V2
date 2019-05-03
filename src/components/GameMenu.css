@@ -1,0 +1,82 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: black;
+  color: white;
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 22px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.menu {
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #6cb281 0%, #18703a 64%, #0a1b00 100%);
+  border-radius: 8px;
+  border: 1px solid #424542;
+
+  box-shadow: 4px 4px #e7dfe7, -4px -4px #e7dfe7, 4px -4px #e7dfe7,
+    -4px 4px #e7dfe7, 0 -2px #9c9a9c, -2px 0 #7b757b, 0 2px #424542;
+  overflow: auto;
+}
+
+.game-wrapper {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 10px;
+}
+
+.menu_item_wrapper {
+  margin-bottom: 10px;
+}
+
+.menu_hand {
+  position: relative;
+  transform: rotate(-90deg);
+  /* top: 0;
+  left: 0; */
+}
+
+.menu_hand > img {
+  width: 50px;
+}
+
+/* dorm */
+
+.dorm_hand {
+  position: absolute;
+  /* top: 0;
+  left: 0 ; */
+}
+
+.dorm_hand > img {
+  width: 50px;
+}
+
+.dormMenu {
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  background-image: url("Dorm.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  border-radius: 8px;
+  border: 1px solid #424542;
+
+  box-shadow: 4px 4px #e7dfe7, -4px -4px #e7dfe7, 4px -4px #e7dfe7,
+    -4px 4px #e7dfe7, 0 -2px #9c9a9c, -2px 0 #7b757b, 0 2px #424542;
+  overflow: auto;
+}
