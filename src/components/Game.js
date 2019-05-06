@@ -6,7 +6,7 @@ import Audio from "../components/Audio"
 
 const Game = ({ start }) => (
   <div>
-      <Audio />
+      {/* <Audio /> */}
   <MenuSelect
     active={true}
     onChoice={start}

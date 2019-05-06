@@ -3,7 +3,6 @@ import React from "react";
 import "./GameMenu.css";
 //import MenuSelect from "./MenuSelect";
 import DormOptions from "./DormOptions";
-import "./Dorm.css";
 
 const renderItem = name => <span>{name}</span>;
 const DormText = () => (

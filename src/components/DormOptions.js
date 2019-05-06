@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import DormContainer from "./DormContainer";
 import { withRouter } from "react-router";
-import "./Dorm.css";
 
 class DormOptions extends React.Component {
   constructor(props) {
