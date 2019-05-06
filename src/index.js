@@ -10,12 +10,16 @@ import Dorm from "../src/components/Dorm";
 // import Cafeteria from "../src/components/Cafeteria";
 // import Frathouse from "../src/components/Frathouse";
 import store from "./config/store";
+// import gameMusic from "./features/world/song21_02.mp3";
+import Audio from "./components/Audio.js"
 
 const routing = (
   <Provider store={store}>
     <Router>
       <div>
+        <Audio/>
         <Route exact path="/" component={Game} />
+        {/* <Route path="/" component={Audio}/>  */}
         <Route path="/map" component={App} />
         <Route path="/dorm" component={Dorm} />
         {/* <Route path="/frathouse" component={Frathouse} />
