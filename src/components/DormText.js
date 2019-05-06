@@ -1,9 +1,6 @@
 import React from "react";
-//import MenuContainer from "./MenuContainer";
 import "./GameMenu.css";
-//import MenuSelect from "./MenuSelect";
-import DormOptions from "./DormOptions";
-import "./Dorm.css";
+simport DormOptions from "./DormOptions";
 
 const renderItem = name => <span>{name}</span>;
 const DormText = () => (
@@ -24,6 +21,6 @@ const DormText = () => (
     />
   </div>
 );
-// const Game = () => <MenuContainer>Menu</MenuContainer>;
+
 
 export default DormText;
