@@ -7,10 +7,11 @@ import { Route, Link, BrowserRouter as Router } from "react-router-dom";
 import Game from "../src/components/Game";
 import Dorm from "../src/components/Dorm";
 import GameOver from "../src/components/GameOver";
-// import Library from "../src/components/Library";
-// import Cafeteria from "../src/components/Cafeteria";
-// import Frathouse from "../src/components/Frathouse";
+import Frat from "../src/components/Frat";
 import store from "./config/store";
+import Gym from "./components/Gym"
+import Cafeteria from "./components/Cafeteria"
+import Library from "./components/Library"
 
 const routing = (
   <Provider store={store}>
@@ -20,9 +21,10 @@ const routing = (
         <Route path="/map" component={App} />
         <Route path="/dorm" component={Dorm} />
         <Route path="/gameover" component={GameOver} />
-        {/* <Route path="/frathouse" component={Frathouse} />
+        <Route path="/gym" component={Gym} />
         <Route path="/cafeteria" component={Cafeteria} />
-        <Route path="/library" component={Library} /> */}
+        <Route path="/library" component={Library} />
+        <Route path="/frathouse" component={Frat}/>
       </div>
     </Router>
   </Provider>
