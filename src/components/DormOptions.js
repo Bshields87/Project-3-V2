@@ -39,15 +39,20 @@ class DormOptions extends React.Component {
 
     let inc = true;
 
-    if (e.keyCode == "32") {
+    if (e.keyCode == "49") {
       inc = true;
     }
     // else if (e.keyCode == "50") {
     //   inc = false;
     // }
-    else if (e.keyCode == "49" || e.keyCode == "50") {
+    else if (e.keyCode == "13") {
       if (this.props.onChoice) {
         this.props.onChoice(this.state.selected);
+        if (this.state.selected === 0) {
+          this.props.history.push("/map");
+        } else if (this.state.selected === 1) {
+          this.props.history.push("/gameover");
+        }
         console.log(this.props.onChoice);
       }
 
