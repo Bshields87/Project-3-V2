@@ -9,15 +9,22 @@ import Dorm from "../src/components/Dorm";
 import GameOver from "../src/components/GameOver";
 import Frat from "../src/components/Frat";
 import store from "./config/store";
+<<<<<<< HEAD
 import Gym from "./components/Gym"
 import Cafeteria from "./components/Cafeteria"
 import Library from "./components/Library"
+=======
+// import gameMusic from "./features/world/song21_02.mp3";
+import Audio from "./components/Audio.js"
+>>>>>>> b35055dcb46e33ba00a18997e356a1905d5564e3
 
 const routing = (
   <Provider store={store}>
     <Router>
       <div>
+        <Audio/>
         <Route exact path="/" component={Game} />
+        {/* <Route path="/" component={Audio}/>  */}
         <Route path="/map" component={App} />
         <Route path="/dorm" component={Dorm} />
         <Route path="/gameover" component={GameOver} />
