@@ -1,6 +1,7 @@
 import React from "react";
 import "./GameMenu.css";
-simport DormOptions from "./DormOptions";
+//import MenuSelect from "./MenuSelect";
+import DormOptions from "./DormOptions";
 
 const renderItem = name => <span>{name}</span>;
 const DormText = () => (
@@ -11,16 +12,20 @@ const DormText = () => (
         console.log("You have chosen", i);
       }}
       renderItem={renderItem}
-      items={["Frat party? Let's do it!", "No I'm gonna stay in and code"]}
+      items={["Hungry? Let's grab some food.", "No I'm gonna stay in and code"]}
       textBox={
         <div>
-          <h1>Welcome to the Dorms</h1>
-          <p>so now we will tell you about the game</p>
+          <h3>Welcome to the Dorms</h3>
+          <p>
+            Your gossipy roommate tells you about a cool frat <br />
+            party where a new student is going to perform a live <br />
+            show, but must eat, study, and exercise beforehand. <br />
+            What do you do?
+          </p>
         </div>
       }
     />
   </div>
 );
-
 
 export default DormText;

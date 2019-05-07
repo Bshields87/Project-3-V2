@@ -42,7 +42,12 @@ class MenuSelect extends React.Component {
   render() {
     console.log(this.props.history);
     return (
+      
       <MenuContainer style={{ ...this.props.style, paddingLeft: "44px" }}>
+            <p>A sinister presence has been menacing the student body. Students have been dying at the hands
+            of an evil siren who is using her music to kill people. You need to survive, but you also need to be a good student.
+          </p>
+
         {this.props.items.map((item, index) => (
           <div
             className="menu_item_wrapper"
@@ -51,6 +56,9 @@ class MenuSelect extends React.Component {
             key={index}
           >
             {this.props.renderItem(item, index)}
+            <div>
+          </div>
+
           </div>
         ))}
         {this.props.active ? (
@@ -60,9 +68,15 @@ class MenuSelect extends React.Component {
           >
             <img src="http://res.cloudinary.com/forte-3d/image/upload/v1512749704/hand_gkm8wr.png" />
           </div>
-        ) : null}
+          
+        ) 
+      
+        : null}
       </MenuContainer>
     );
   }
+ 
+
+
 }
 export default withRouter(MenuSelect);
