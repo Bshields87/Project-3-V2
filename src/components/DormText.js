@@ -18,9 +18,9 @@ const DormText = () => (
           <h3>Welcome to the Dorms</h3>
           <p>
             Your gossipy roommate tells you about a cool frat <br />
-            party where a new student is going to perform a live <br />
-            show, but must eat, study, and exercise beforehand. <br />
-            What do you do?
+            party where the colleges newest swimstar is going to <br />
+            perform a live show. You've got tons of school work to <br />
+            do but it is Friday. What do you do?
           </p>
         </div>
       }
